@@ -2,8 +2,11 @@ pipeline {
     agent any
      environment {
         PATH = "C:\\Windows\\System32;${env.PATH}"
+        PATH = "C:\Program Files\Docker\Docker;${env.PATH}"
      }
 
+
+   
     stages {
         stage('Install Dependencies') {
             steps {
