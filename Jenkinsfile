@@ -22,7 +22,7 @@ pipeline {
             steps {
                 bat 'echo Docker build and run...'
                 bat 'docker build -t myapp .'
-                bat 'docker run -d -p 8080:80 myapp'
+                bat 'docker run -d -p 8081:80 myapp'
             }
         }
     }
